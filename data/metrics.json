@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "company": "Northwind Home Services (demo)",
+    "period": "Q3 2026",
+    "note": "All figures are synthetic and for demonstration only."
+  },
+  "kpis": {
+    "total_leads": 6275,
+    "valid_leads": 5411,
+    "ad_spend_usd": 184500,
+    "cost_per_lead_usd": 29.4,
+    "booked_jobs": 912,
+    "lead_to_job_rate_pct": 14.5
+  },
+  "leads_by_channel": [
+    { "channel": "Paid Search", "leads": 2928, "spend_usd": 96200 },
+    { "channel": "Paid Social", "leads": 1312, "spend_usd": 61300 },
+    { "channel": "Organic", "leads": 799, "spend_usd": 0 },
+    { "channel": "Referral", "leads": 612, "spend_usd": 0 },
+    { "channel": "Email", "leads": 418, "spend_usd": 4200 },
+    { "channel": "Unattributed", "leads": 206, "spend_usd": 0 }
+  ],
+  "leads_trend": [
+    { "month": "Jul", "leads": 1894, "jobs": 268 },
+    { "month": "Aug", "leads": 2142, "jobs": 319 },
+    { "month": "Sep", "leads": 2239, "jobs": 325 }
+  ],
+  "top_landing_pages": [
+    { "page": "/", "users": 52938, "forms": 119, "calls": 1521 },
+    { "page": "/attic-insulation", "users": 18420, "forms": 86, "calls": 642 },
+    { "page": "/roofing", "users": 13877, "forms": 71, "calls": 410 },
+    { "page": "/blog/attic-baffles", "users": 9330, "forms": 12, "calls": 44 },
+    { "page": "/get-a-quote", "users": 7110, "forms": 203, "calls": 98 }
+  ],
+  "brands": [
+    { "brand": "Insulation", "leads": 2928, "revenue_usd": 1364000 },
+    { "brand": "Roofing", "leads": 1132, "revenue_usd": 1890000 },
+    { "brand": "EcoBuild", "leads": 613, "revenue_usd": 742000 },
+    { "brand": "Solar Roof", "leads": 288, "revenue_usd": 611000 }
+  ]
+}

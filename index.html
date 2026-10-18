@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marketing Analytics Dashboard — Demo</title>
+  <meta name="description" content="A demo marketing analytics dashboard built on a medallion data pipeline. Synthetic data." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <div>
+        <h1>Marketing Analytics</h1>
+        <p id="subtitle">Loading…</p>
+      </div>
+    </div>
+    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme">◐</button>
+  </header>
+
+  <main class="wrap">
+    <section class="demo-note" role="note">
+      Demo dashboard — all figures are <strong>synthetic</strong>. Data is served from a static
+      <code>metrics.json</code> that a medallion pipeline (Bronze → Silver → Gold) would produce.
+    </section>
+
+    <section class="kpis" id="kpis" aria-label="Key metrics"></section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Leads by channel</h2>
+        <div id="chartChannel" class="chart"></div>
+      </article>
+      <article class="card">
+        <h2>Leads &amp; booked jobs by month</h2>
+        <div id="chartTrend" class="chart"></div>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Top landing pages</h2>
+        <div id="tablePages"></div>
+      </article>
+      <article class="card">
+        <h2>Revenue by brand</h2>
+        <div id="chartBrand" class="chart"></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Demo project · synthetic data</span>
+    <a href="https://github.com/benielpineda-maker" target="_blank" rel="noopener">github.com/benielpineda-maker</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
